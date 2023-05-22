@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <img src="./images/beautiful-mountains(1)-min.jpg" alt="Weather App Picture">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
 
+<h2><u>WEATHER APP</u></h2>
 <form method="post">
   {% csrf_token %}
-  <input type="text" name="city1" placeholder="Enter city 1">
-  <input type="text" name="city2" placeholder="Enter city 2">
+  <input type="text" name="city1" placeholder="Enter city 1"><br/><br/>
+  <input type="text" name="city2" placeholder="Enter city 2"><br/><br/>
   <button type="submit">Compare Weather</button>
 </form>
 
